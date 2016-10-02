@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crowdmark Assignment Reminder",
+  "description": "Reminds you to complete and submit your assignment on Crowdmark before the deadline.",
+  "version": "0.1",
+
+  "author": "Mohammed Nafees",
+
+  "minimum_chrome_version": "50",
+
+  "page_action": {
+    /*"default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },*/
+  },
+  "permissions": [
+    "notifications",
+    "alarms",
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://app.crowdmark.com/assignments/*"
+  ],
+  "background": {
+    "scripts": ["moment.js", "background.js"]
+  }
+}
